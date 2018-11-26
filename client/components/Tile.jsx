@@ -5,7 +5,7 @@ const Tile = props => {
   const tileValue = String.fromCodePoint(parseInt(props.value, 16))
   return (
     <div className='tile'>
-      {tileValue}
+      {props.isVisible && {tileValue}}
     </div>
   )
 }
